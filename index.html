@@ -47,21 +47,21 @@
 
   </style>
 </head>
-<body> Redirigint...
+<body> <center>Redirigint...</center>
   <script>
     const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbzCEOA18lC25BBBS3dr9QC_G0eM8HinMgom7R1IuayLGfD5xh6Cd40Mcqlyvfxc2FW2/exec";
     
     var url = document.location.href;
     var k = url.substr(url.lastIndexOf("k=")+2);
-    window.alert(k);
+    //window.alert(k);
     
     if(k){
       fetch(AS_URL_BASE+'?k='+k)
       .then(r => r.text())
       .then((r) => {
-        console.log(r);
+        //console.log(r);
         //document.write(r);
-        window.alert(r);
+        //window.alert(r);
         if(r){
           document.location.replace(r);
         }
@@ -71,7 +71,7 @@
 
   </script>
   
- <!-- <div class="lds-ring"><div></div><div></div><div></div><div></div></div>  -->
+ <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
   
   
 </body>
